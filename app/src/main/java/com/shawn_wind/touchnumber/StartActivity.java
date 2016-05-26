@@ -21,15 +21,6 @@ public class StartActivity extends AppCompatActivity implements View.OnClickList
     public  void onClick(View start){
         Intent startIntent = new Intent(StartActivity.this, MainActivity.class);
         startActivity(startIntent);
-
-        GridLayout GL = new GridLayout(this);
-
-        GL.setColumnCount(4);   //Buttonの数
-        setContentView(GL);
-
-        Button topButton = new Button (this);
-        topButton.setText("1");
-        GL.addView(topButton);
     }
 
 }
